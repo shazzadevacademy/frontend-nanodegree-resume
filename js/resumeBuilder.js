@@ -1,45 +1,42 @@
-//Bio
-
 var bio = {
         "name" : "Sharon Rumsey",
         "role" : "Web Developer",
-        "welcomeMessage" : "Hire Me!",
+        
         "contacts" : {
-            "mobile" : "Mobile: 027-240-1705 ",
-            "email" : "Email: sharon@rumsey.nz ",
-            "github" :"Github: shazzadevacademy ",
-            "twitter" : "@DevShazza",
-            "location" : "Location: Wellington, New Zealand "},
-        "bioPic" : "./images/sharon.jpg", 
-        "skills" : ["Awesome" , " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"]
-  }
-
+            "mobile"   : "Mobile: 027-240-1705 ",
+            "email"    : "Email: sharon@rumsey.nz ",
+            "github"   :"Github: shazzadevacademy ",
+            "twitter"  : "@DevShazza",
+            "location" : "Location: Wellington, New Zealand "
+          },
+        "welcomeMsg" : "Hire Me!",
+        "bioPic" : "images/sharon.jpg", 
+        "skills" : ["Awesome", " Hope to be Programmer", "JavaScript Wannabe", "Wife & Mummy"],
+  };
   var formattedName = HTMLheaderName.replace("%data%", bio.name);
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-  $("#header").prepend(formattedName + formattedRole);
-  $("#header").prepend(formattedName + formattedName);
 
-//Header Info
   // var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-  // $("#header").append(formatedEmail);
-
   // var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-  // $("#header").append(formatedGithub);
-
   // var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-  // $("#header").append(formatedmobile);
-
   // var formattedLoc = HTMLlocation.replace("%data%", bio.contacts.location);
-  // $("#header").append(formattedLocation);
-
   // var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+  // var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
+
+ // "display": function() {
+  
+  $("#header").prepend(formattedName);
+  $("#header").append(formattedRole);
+  
+  // $("#header").append(formatedEmail);
+  // $("#header").append(formatedGithub);
+  // $("#header").append(formatedmobile); 
+  // $("#header").append(formattedLocation);
   // $("#header").append(formattedbioPic);
+  // $("#header").append(formattedwelcomeMsg);
 
-  // var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcome);
-  // $("#header").append(formattedwelcomeMess);
 
-// displayBio();
-
+ // };
 
 //skills
 if(bio.skills.length > 0) {
@@ -53,8 +50,9 @@ if(bio.skills.length > 0) {
       formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
       $("#skills").append(formattedSkill);
     }
-
-
+  // }
+// };
+// displayBio();
 
 var work = {
   "jobs" : [
